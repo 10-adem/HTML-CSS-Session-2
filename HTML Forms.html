@@ -1,66 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formlar</title>
     <style>
-        #seker{
+        #seker {
             border: 5px solid orange;
-            width: 50%;
+            width: 300px;
         }
-        #seker2{
+
+        #seker2 {
             border: 5px solid blueviolet;
-            width: 50%;
+            width: 300px;
         }
-        #yorum{
+
+        #yorum {
             resize: none;
             width: 300px;
             height: 100px;
         }
-        .hrv{
+
+        .hrv {
             display: inline-block;
             width: 200px;
         }
     </style>
-    
+
 </head>
+
 <body>
     <h1>Welcome the Clarusway</h1>
-    
+
     <form action="result.html" method="get">
         <div>
             <label for="name">Adınızı Giriniz:</label>
-            <input type="text"name="isim" id="name" placeholder="İsminizi giriniz.." >
+            <input type="text" name="isim" id="name" placeholder="İsminizi giriniz..">
             <br>
             <label for="lastname">Soyadınızı Giriniz</label>
-            <input type="text"name="soyad" id="lastname" placeholder="Soyadınızı giriniz..." >
+            <input type="text" name="soyad" id="lastname" placeholder="Soyadınızı giriniz...">
         </div>
 
         <div>
             <label for="sifre">Parolanızı giriniz.</label>
             <input type="password" name="Girilen Parola" id="sifre">
         </div>
-        
+
         <div>
             <p>Cinsiyetinizi Giriniz:</p>
             <label for="gerder1">Erkek</label>
-            <input type="radio" name="cinsiyet" id="gerder1" value="Erkek" >
+            <input type="radio" name="cinsiyet" id="gerder1" value="Erkek">
 
             <label for="gerder2">Kadın</label>
-            <input type="radio" name="cinsiyet" id="gerder2" value="Kadın" >
+            <input type="radio" name="cinsiyet" id="gerder2" value="Kadın">
         </div>
 
         <div>
             <p>Favori hayvanlarınızı işaretleyiniz</p>
-            
-            <input type="checkbox" name="hayvan_1" id="panda" value="Panda"checked>
+
+            <input type="checkbox" name="hayvan_1" id="panda" value="Panda" checked>
             <label for="panda">Panda</label>
-            
+
             <input type="checkbox" name="hayvan_2" id="fish" value="Balık">
             <label for="fish">Balık</label>
-            
+
             <input type="checkbox" name="hayvan_3" id="horse" value="Unicorn">
             <label for="horse">Unicorn</label>
         </div>
@@ -99,7 +104,8 @@
 
         <div>
             <label for="no">Tel.No:</label>
-            <input type="tel" name="Tel.No" id="no" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="xxx-xxx-xx-xx">
+            <input type="tel" name="Tel.No" id="no" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                placeholder="xxx-xxx-xx-xx">
         </div>
 
         <div>
@@ -132,63 +138,43 @@
                     <option value="Kadayıf">Kadayıf</option>
                     <option value="Baklava">Baklava</option>
                 </optgroup>
-                
+
             </select>
         </div>
 
         <div>
             <label for="yorum">Yorum</label> <br>
-            <textarea name="Girilen_yorum" id="yorum" cols="30" rows="10" placeholder="Yorum lütfen..." ></textarea>
+            <textarea name="Girilen_yorum" id="yorum" cols="30" rows="10" placeholder="Yorum lütfen..."></textarea>
         </div>
 
         <div>
             <label for="input_browser">Browsers:</label>
             <input type="text" name="Kullanılan Browser" id="input_browser" list="browsers">
-            
+
             <datalist id="browsers">
-                    <option value="FireFox"></option>
-                    <option value="Chorome"></option>
-                    <option value="Safari0"></option>
-                    <option value="Brave"></option>
+                <option value="FireFox"></option>
+                <option value="Chorome"></option>
+                <option value="Safari0"></option>
+                <option value="Brave"></option>
             </datalist>
         </div>
 
         <div>
-                <fieldset class="hrv">
-                        <legend>Kişisel Bilgiler</legend>
-                        <label for="fname">İsim</label>
-                        <input type="text" name="isim" id="fname"> <br>
-                        <label for="sname">Soyisim</label>
-                        <input type="text" name="isim" id="sname">
-                </fieldset>
+            <fieldset class="hrv">
+                <legend>Kişisel Bilgiler</legend>
+                <label for="fname">İsim</label>
+                <input type="text" name="isim" id="fname"> <br>
+                <label for="sname">Soyisim</label>
+                <input type="text" name="isim" id="sname">
+            </fieldset>
 
         </div>
-       
-
-
-
-
-        
-
-
-
 
         <br><br><br><br><br>
         <input type="submit" value="Gönder">
         <br><br><br>
         <input type="reset" value="sıfırla">
     </form>
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
+
 </html>
